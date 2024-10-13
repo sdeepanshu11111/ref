@@ -26,38 +26,11 @@ const LoginForm = (props) => {
 
   useEffect(() => {
     if (auth.auth.logged_in) {
-      return navigate("/switch-store");
+      return navigate("/dashboard");
     }
   });
 
-  useEffect(() => {
-    let storeId = props.match?.params?.module;
 
-    if (storeId) {
-      axios({
-        url: import.meta.env.VITE_REACT_API_URL + storeId,
-        method: "post",
-        withCredentials: true,
-      })
-        .then((res) => {
-          if (res.data.success === 1) {
-            dispatch({
-              type: "LOGIN_SUCCESS",
-              payload: { data: res.data.data },
-            });
-          } else {
-            dispatch({ type: "LOGIN_ERROR", err: res.data.msg });
-          }
-        })
-        .catch((err) => {
-          dispatch({ type: "LOGIN_ERROR", err });
-        });
-    }
-
-    if (authError) {
-      removeError();
-    }
-  }, []);
 
   useEffect(() => {
     if (authError) {
@@ -71,11 +44,7 @@ const LoginForm = (props) => {
     signIn(values);
   };
 
-  useEffect(() => {
-    if (auth.auth.logged_in && auth?.auth?.user?.user_phone !== "") {
-      return navigate("/switch-store");
-    }
-  }, [auth]);
+ 
 
   return (
     <motion.div

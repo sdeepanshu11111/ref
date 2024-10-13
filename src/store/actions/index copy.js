@@ -139,6 +139,7 @@ const loginData = {
     show_trial: 1,
   },
 };
+
 export const signIn = (credentials) => {
   const { email, password } = credentials;
   return (dispatch, getState) => {
@@ -153,30 +154,14 @@ export const signIn = (credentials) => {
       withCredentials: false,
     })
       .then((res) => {
-        if (res.status === 201) {
-          // if (window.innerWidth < 1280) {
-          //   if (res.data.data.user.subscription !== "") {
-          //     return window.location.assign(
-          //       import.meta.env.VITE_REACT_OLD_APP_URL_MOBILE
-          //     );
-          //   } else {
-          //     return window.location.assign(
-          //       import.meta.env.VITE_REACT_OLD_APP_URL
-          //     );
-          //   }
-          // } else {
-          //   return window.location.assign(
-          //     import.meta.env.VITE_REACT_OLD_APP_URL
-          //   );
-          // }
-          console.log("ressss", res, res.data.access_token);
+        console.log("loginres", res, res.data);
 
-          // return window.location.assign(import.meta.env.VITE_REACT_OLD_APP_URL);
+        let data = { ...loginData, ...res.data };
+
+        if (res.status === 201) {
           dispatch({
             type: "LOGIN_SUCCESS",
-            payload: {
-              data: { ...loginData, access_token: res.data.access_token },
-            },
+            payload: { data: loginData },
           });
         } else {
           dispatch({ type: "LOGIN_ERROR", err: res.data.msg });
@@ -188,35 +173,35 @@ export const signIn = (credentials) => {
   };
 };
 
-// export const signUp = (credentials) => {
-//   const { first_name, last_name, email, password } = credentials;
-//   return (dispatch, getState) => {
-//     axios({
-//       url: import.meta.env.VITE_REACT_API_URL + "/login/mail_signup",
-//       method: "post",
-//       data: {
-//         first_name,
-//         last_name,
-//         email,
-//         password,
-//       },
-//       withCredentials: true,
-//     })
-//       .then((res) => {
-//         if (res.data.success === 1) {
-//           dispatch({
-//             type: "SIGNUP_SUCCESS",
-//             payload: { data: res.data.data },
-//           });
-//         } else {
-//           dispatch({ type: "SIGNUP_ERROR", err: res.data.msg });
-//         }
-//       })
-//       .catch((err) => {
-//         dispatch({ type: "SIGNUP_ERROR", err });
-//       });
-//   };
-// };
+export const signUp = (credentials) => {
+  const { first_name, last_name, email, password } = credentials;
+  return (dispatch, getState) => {
+    axios({
+      url: import.meta.env.VITE_REACT_API_URL + "/login/mail_signup",
+      method: "post",
+      data: {
+        first_name,
+        last_name,
+        email,
+        password,
+      },
+      withCredentials: true,
+    })
+      .then((res) => {
+        if (res.data.success === 1) {
+          dispatch({
+            type: "SIGNUP_SUCCESS",
+            payload: { data: res.data.data },
+          });
+        } else {
+          dispatch({ type: "SIGNUP_ERROR", err: res.data.msg });
+        }
+      })
+      .catch((err) => {
+        dispatch({ type: "SIGNUP_ERROR", err });
+      });
+  };
+};
 
 export const signOut = (msg) => {
   return (dispatch) => {
@@ -242,6 +227,32 @@ export const updateStoreStatus = (store) => {
       },
     });
 };
+
+// export const switchStore = (storeid) => {
+//   return (dispatch, getState) => {
+//     axios({
+//       url: import.meta.env.VITE_REACT_API_URL + "/store/switch_store",
+//       method: "post",
+//       data: {
+//         storeid,
+//       },
+//       withCredentials: true,
+//     })
+//       .then((res) => {
+//         if (res.data.success === 1) {
+//           dispatch({
+//             type: "STORE_SWITCH_SUCCESSFUL",
+//             payload: { data: res.data.data },
+//           });
+//         } else {
+//           dispatch({ type: "SIGNOUT_SUCCESS" });
+//         }
+//       })
+//       .catch((err) => {
+//         dispatch({ type: "SIGNOUT_SUCCESS" });
+//       });
+//   };
+// };
 
 export const loadingTrue = (storeid) => {
   return (dispatch, getState) => {

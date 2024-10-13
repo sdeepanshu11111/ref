@@ -18,6 +18,9 @@ const initState = {
     plan: localStorage.getItem("plan")
       ? JSON.parse(localStorage.getItem("plan"))
       : null,
+    access_token: localStorage.getItem("access_token")
+      ? JSON.parse(localStorage.getItem("access_token"))
+      : null,
   },
   count: {},
 };
@@ -38,6 +41,10 @@ const authReducer = (state = initState, action) => {
       localStorage.setItem("store", JSON.stringify(action.payload.data.store));
       localStorage.setItem("steps", JSON.stringify(action.payload.data?.steps));
       localStorage.setItem("plan", JSON.stringify(action.payload.data.plan));
+      localStorage.setItem(
+        "access_token",
+        JSON.stringify(action.payload.data.access_token)
+      );
 
       return {
         ...state,
@@ -48,6 +55,7 @@ const authReducer = (state = initState, action) => {
           store: action.payload.data.store,
           steps: action.payload.data?.steps,
           plan: action.payload.data.plan,
+          access_token: action.payload.data.access_token,
         },
         authError: null,
       };

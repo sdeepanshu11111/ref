@@ -9,7 +9,7 @@ const withAuth = (WrappedComponent) => {
 
     useEffect(() => {
       if (!auth?.auth?.logged_in) {
-        return navigate("/switch-store");
+        return navigate("/login");
       } else {
         if (!auth?.auth?.user?.user_phone) {
           return navigate("/contact");
