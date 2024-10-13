@@ -27,12 +27,12 @@ import SignupQuestionairre from "./components/Signup/SignupQuestionairre";
 import Affiliates from "./affiliates.jsx"
 import Payout from "./payout.jsx";
 import Lazy_Home from "./lazyparent/Lazy_Home";
-import Lazy_Orders from "./lazyparent/Lazy_Orders";
+
 import Lazy_Shipment from "./lazyparent/Lazy_Shipment";
 
 import ScreenWapper from "./components/ScreenWapper";
 import ContactDetailsFrom from "./newLogin/ContactDetailsFrom";
-import Lazy_NDR from "./lazyparent/Lazy_NDR";
+
 
 
 const Dashboard = React.lazy(() => import("./dashboard"));
@@ -202,20 +202,7 @@ function App() {
               />
             }
           /> */}
-          <Route
-            path="/ndr"
-            exact="true"
-            element={
-              <Dashboard
-                title="vFulfill | NDR"
-                auth={auth}
-                location={location}
-                match={match}
-                navigate={navigate}
-                component={Lazy_NDR}
-              />
-            }
-          />
+    
           <Route
             path="/program"
             element={

@@ -1,5 +1,6 @@
 {
-  "name": "vfapp2.2",
+  "name": "ref",
+  "homepage": "https://sdeepanshu11111.github.io/ref",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +14,9 @@
     "build-stage": "vite build --mode stage",
     "build-prod": "vite build --mode prod",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@intercom/messenger-js-sdk": "^0.0.11",
@@ -49,6 +52,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.7",
     "vite": "^5.2.0"
