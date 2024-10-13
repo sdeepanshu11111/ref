@@ -71,12 +71,21 @@ const SignUpForm = (props) => {
 
     try {
       const res = await sendPostRequest("", values);
-      if (res.success === 1) {
-        getAnswer();
-        props.setSignupData({ email: values.email, password: values.password });
-        message.success(res.msg);
-        props.setActiveComp("otp");
-      } else {
+
+
+      if(res.message === "User created successfully"){
+        message.success(res.message)
+        props.setActiveComp("login");
+      }
+
+      // if (res.success === 1) {
+      //   getAnswer();
+      //   props.setSignupData({ email: values.email, password: values.password });
+      //   message.success(res.msg);
+      //   props.setActiveComp("otp");
+      // }
+      
+      else {
         message.error(res.msg);
       }
     } catch (e) {
