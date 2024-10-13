@@ -1,1 +1,0 @@
-import{N as t,Q as s}from"./index-BN7P4gy-.js";import{R as o}from"./index-CEgzu5Tm.js";const r=e=>t.jsx(o,{status:"404",title:"404",subTitle:"Sorry, the page you visited does not exist.",extra:t.jsx(s,{onClick:()=>e.navigate("/login"),type:"primary",children:"Back Home"})});export{r as default};
