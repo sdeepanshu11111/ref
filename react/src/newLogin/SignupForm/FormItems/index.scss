@@ -1,0 +1,130 @@
+#react-tel {
+  .react-tel-input {
+    input {
+      border: 1px solid #eaeaea !important;
+      background-color: #fff !important;
+      padding-left: 46px !important;
+    }
+  }
+}
+
+// react input
+
+.react-tel-input .form-control {
+  background-color: #fff !important;
+  color: #212121 !important;
+}
+
+.orange-tooltip {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+// select
+.signup-select {
+  .ant-select-selector {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #eaeaea !important;
+  }
+}
+
+.winning-checkbox {
+  label {
+    span:last-of-type {
+      color: #212121 !important;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap: 6px;
+    }
+  }
+}
+
+.whatsapp-custom-text {
+  // font-size: 11px !important;
+}
+.privacy-checkbox-container {
+  span {
+    color: #212121 !important;
+  }
+  a {
+    text-decoration: underline;
+    // font-weight: 700;
+    color: #6450d3;
+    // font-style: italic;
+  }
+}
+
+.telegram-custom-text,
+.skype-custom-text {
+  color: #1e96c8;
+}
+
+.custom-select-dropdown {
+  padding: 0px;
+
+  .ant-select-item {
+    padding: 10px 12px;
+    border-radius: 0px !important;
+    background-color: #fafafa !important;
+    border: 0.5px solid #eaeaea;
+  }
+
+  .ant-select-item-option-selected {
+    background-color: #e6f4df !important;
+    border: 1px solid #c2e2d0;
+    position: relative;
+  }
+
+  .ant-select-item-option-selected::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    right: 10px;
+    top: 50%;
+    background: url(./tick.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+}
+
+.sign-in-wr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #505050;
+  font-size: 16px;
+  font-weight: 400;
+
+  span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #6450d3;
+    font-weight: 600;
+  }
+}
+
+.input-code::placeholder {
+  color: #168f64;
+  opacity: 1; /* Firefox */
+}
+
+.input-code::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #168f64 !important;
+}

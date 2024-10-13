@@ -1,0 +1,15 @@
+// copy comp
+.copy-comp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  cursor: pointer;
+  color: #3b7fd9;
+}
+
+.copy-comp:hover {
+  svg {
+    fill: #3b7fd9;
+  }
+}

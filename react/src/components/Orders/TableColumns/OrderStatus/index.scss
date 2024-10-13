@@ -1,0 +1,11 @@
+.order-status-col {
+  padding: 20.5px 16px 9.5px 16px;
+  position: relative;
+  overflow-y: auto;
+  .status-container {
+    padding: 5px 7px 4px 8px;
+    width: fit-content;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+}

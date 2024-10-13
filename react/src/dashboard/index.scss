@@ -1,0 +1,22 @@
+.dashboard {
+  height: 100vh;
+}
+
+.content {
+  height: calc(100vh - 64px);
+  overflow-x: hidden !important;
+  background: #fff;
+  scroll-behavior: smooth !important;
+
+  padding: 20px 32px 24px 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 20px 12px 24px 12px !important;
+  }
+
+  .site-layout {
+    margin-left: 0px !important;
+  }
+}

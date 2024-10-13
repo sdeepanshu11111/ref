@@ -1,0 +1,28 @@
+.shipment-filter-tag-row-container {
+  .active-filter-tag {
+    padding-inline: 12px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #212121 !important;
+    display: flex;
+    cursor: pointer;
+    .label-container {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+    .filter-count-container {
+      display: inline-block;
+      background-color: #fff;
+      padding-inline: 6px;
+      border-radius: 4px;
+      margin-left: 2px;
+    }
+  }
+}

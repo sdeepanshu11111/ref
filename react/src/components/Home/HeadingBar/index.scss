@@ -1,0 +1,108 @@
+.snapshot-page-heading-container {
+  position: relative;
+  .limk {
+    color: #6450d3;
+    font-weight: 500;
+  }
+  .here-btn {
+    color: #6450d3;
+    font-weight: 500;
+    padding: 0 0 !important;
+    height: auto !important;
+    line-height: 16px;
+  }
+  .blog-container {
+    position: absolute;
+
+    max-width: 329px;
+
+    top: 0;
+    padding: 11px 18px 10px 10px;
+    background-color: #fff;
+    left: 151px;
+    border: 1.5px solid #514de2;
+    border-radius: 2px;
+    .heading {
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .info {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 5px;
+    }
+    .info:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+  .top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #918cad;
+    .right {
+      line-height: 0;
+    }
+    .left {
+      align-self: flex-end;
+      padding-bottom: 22px;
+      width: 332px;
+
+      .heading {
+        font-size: 16px;
+        font-weight: 600;
+        color: #505050;
+        text-align: end;
+        margin-bottom: 10px;
+        .sp {
+          color: #514de2;
+        }
+      }
+      .progressContainer {
+        .ant-progress-outer {
+          padding-right: 0 !important;
+        }
+        .ant-progress-inner {
+          background-color: #d0cde0 !important;
+        }
+
+        .ant-progress-bg {
+          height: 16px !important;
+          background: #6450d3 !important;
+        }
+        .ant-progress-text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .snapshot-page-heading-container {
+    .blog-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      top: 0;
+      padding: 8px;
+
+      border-radius: 2px;
+      .heading {
+        line-height: 15px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      .info {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 4px;
+      }
+    }
+
+    .top-bar-container {
+      .left {
+        display: none;
+      }
+    }
+  }
+}

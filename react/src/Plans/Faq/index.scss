@@ -1,0 +1,38 @@
+.faq-wraper {
+  margin-top: 100px;
+
+  .ant-collapse {
+    overflow: hidden;
+    border-radius: 8px !important;
+    .ant-collapse-header {
+      background-color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      color: #212121;
+
+      svg {
+        transition: all 0.3s linear;
+      }
+    }
+
+    .ant-collapse-header[aria-expanded="true"] {
+      svg {
+        transition: all 0.3s linear;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .more {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 700;
+    color: #212121;
+    margin-top: 10px;
+  }
+}

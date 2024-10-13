@@ -1,0 +1,393 @@
+.otp-form-container {
+  width: 600px;
+  padding: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border-radius: 5px;
+  z-index: 2;
+
+  .heading-icon-container {
+    margin-bottom: 26px;
+  }
+  .errorheading {
+    color: #b23333;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .heading-bar {
+    text-align: center;
+    margin-bottom: 28px;
+    .welcome-heading {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .info-email {
+      font-size: 20px;
+      margin-top: 4px;
+      margin-bottom: 24px;
+      span {
+        font-weight: 700;
+      }
+    }
+    .subheading {
+      font-size: 16px;
+    }
+    .edit-btn {
+      font-size: 20px;
+      font-weight: 600;
+      border-bottom: 1px solid #505050;
+      border-style: dashed;
+      border-radius: 0px;
+      color: #505050;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .input-edit-email {
+      height: 64px !important;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 500;
+      border: 1px solid #848484;
+      max-width: 428px;
+    }
+  }
+
+  .emailContainer {
+    margin-bottom: 30px;
+    .heading {
+      font-size: 16px;
+      color: #505050;
+    }
+    .email {
+      font-size: 20px;
+      color: #514de2;
+      margin-right: 7px;
+    }
+    .edit-Btn-Container {
+      position: relative;
+      top: 6px;
+    }
+  }
+  .edit-section-container {
+    margin-bottom: 36px;
+    .heading {
+      color: #505050;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .search-input {
+      height: 40px;
+      input {
+        border-radius: 4px;
+        color: var(--violet) !important;
+        border: 1px solid #eaeaea !important;
+        background-color: #f5f5f5;
+        font-size: 20px;
+        font-weight: 500;
+        height: 40px;
+      }
+      .ant-input-search-button {
+        background-color: #47a055;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+  .editState {
+    pointer-events: none;
+  }
+  .new-otp-verify {
+    text-align: center;
+    .heading {
+      color: #212121;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+  .resend-code {
+    position: relative;
+    left: 72px;
+    color: #514de2;
+
+    button {
+      color: #514de2;
+
+      span {
+        color: #514de2;
+      }
+    }
+  }
+  .resend-code-time0 {
+    position: relative;
+    left: 126px;
+    color: #514de2;
+  }
+  .resend {
+    border: 0;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: var(--violet);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .disableresend {
+    color: #918cad;
+    pointer-events: none;
+    font-weight: 400;
+  }
+  .time-container {
+    color: #514de2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .submit-btn {
+    background-color: var(--violet);
+    border-radius: 4px !important;
+    height: 56px !important;
+    width: 100%;
+    max-width: 428px;
+    font-size: 14px;
+    display: block;
+    margin-top: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    border: 0px solid transparent;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .submit-btn-disabled {
+  }
+}
+
+.otp-form {
+  /* Chrome, Safari, Edge, Opera */
+  color: #212121;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+    height: 72px !important;
+    width: 72px !important;
+    padding: 0 !important;
+  }
+  .error-text {
+    color: #fc125e;
+  }
+
+  .main-heading {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0;
+
+    color: #212121;
+  }
+  .sub-heading {
+    font-size: 14px;
+    font-weight: 400;
+    color: #323041;
+  }
+  .email-section {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    .email-filled {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .input-email {
+      height: 40px !important;
+      border-radius: 4px !important;
+      border: 1px solid #898989;
+      background-color: #f5f5f5;
+      font-size: 14px;
+      padding: 10px 12px 10px 16px;
+      width: 100%;
+    }
+    .edit {
+      cursor: pointer;
+      margin-left: 4px;
+      .editiconContainer {
+        position: relative;
+        top: 2px;
+      }
+      .edit-s {
+        text-decoration: underline;
+        color: #fc125e;
+      }
+    }
+    .otp-info {
+      font-size: 12px;
+      font-style: italic;
+      color: #898989;
+    }
+  }
+  .otp-section {
+    .otp-verify {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      .otp-number {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 36px;
+        padding: 6px !important;
+        // height: 40px;
+        // height: 40px !important;
+        // border-radius: 4px !important;
+        // border: 1px solid #898989;
+        // background-color: #f5f5f5;
+        // font-size: 14px;
+        // margin-right: 6px;
+        // padding-left: 25px;
+        // border: 1px solid #898989;
+      }
+      .otp-number:focus {
+        border: 1px solid #3a2ccd;
+      }
+    }
+    .msg-otp {
+      font-size: 12px;
+      font-style: italic;
+      color: #898989;
+      margin-top: 6px;
+      margin-bottom: 4px;
+    }
+
+    .resend {
+      border: 0;
+      background-color: #ffffff;
+      text-decoration: underline;
+      color: #3b2dd1;
+      cursor: pointer;
+    }
+    .disableresend {
+      text-decoration: underline;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .time-container {
+      color: #514de2;
+    }
+    .submit-section {
+      padding-top: 199px;
+      .verify-container {
+        background-color: #38b957;
+        border-radius: 2px !important;
+        height: 40px !important;
+        width: 100%;
+        font-size: 14px;
+        display: block;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 12px;
+        border: 0px solid transparent;
+      }
+      .disable-verify-container {
+        background-color: #38b957;
+        border-radius: 2px !important;
+        height: 40px !important;
+        width: 100%;
+        font-size: 14px;
+        display: block;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 12px;
+        border: 0px solid transparent;
+        opacity: 0.6;
+      }
+      .go-back-btn {
+        border-radius: 2px !important;
+        height: 40px !important;
+        width: 100%;
+        font-size: 14px;
+        display: block;
+        color: #898989;
+        border: 1px solid #898989;
+      }
+      .rightlogocontainer {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        top: 3px;
+        left: 6px;
+      }
+    }
+  }
+
+  .new-otp-verify {
+    > div {
+      gap: 6px;
+    }
+    input {
+      padding: 0px;
+    }
+  }
+
+  .change-btn-container {
+    .change-emailbtn {
+      background-color: #38b957;
+      border-radius: 2px !important;
+      height: 40px !important;
+      width: 100%;
+      font-size: 14px;
+      display: block;
+      color: #ffffff;
+      font-weight: 500;
+      margin-bottom: 12px;
+      border: 0px solid transparent;
+    }
+  }
+  .goback-btn {
+    background-color: transparent;
+    border-radius: 2px !important;
+    height: 40px !important;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 12px;
+    border: 1px solid #898989;
+    span {
+      color: #898989;
+    }
+  }
+  .ant-btn[disabled] {
+    opacity: 0.6;
+  }
+}
+
+.new-otp-verify {
+  > div {
+    gap: 6px;
+    justify-content: center;
+  }
+  input {
+    padding: 0px;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #848484 !important;
+  }
+}
+
+.witherror {
+  input,
+  .flag-dropdown {
+    border: 1px solid #b23333 !important;
+  }
+}

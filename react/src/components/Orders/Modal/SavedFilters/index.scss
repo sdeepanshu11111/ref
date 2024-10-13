@@ -1,0 +1,86 @@
+.save-order-filter-modal-container {
+  font-size: 14px;
+  .main-container {
+    padding: 19px 16px;
+    .sectionHeading {
+      color: #848484;
+      font-size: 14px;
+    }
+    .setting-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .filter-setting-bar-container {
+        display: flex;
+        align-items: center;
+        background-color: #FAFAFA;
+        border:1px solid #DDDDDD;
+        padding-left: 12px;
+        padding-right: 16px;
+        color: #505050;
+        justify-content: space-between;
+        border-radius: 4px;
+        .item-right{
+            display: flex;
+
+        }
+
+      }
+    }
+    .footer-container {
+      
+        padding-top: 14px;
+        .submit-btn {
+          width: 100%;
+          display: flex;
+          gap: 6px;
+          
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          font-size: 16px;
+          background-color: #c2e2d0;
+          border-color: transparent;
+          color: #3b644d;
+          margin-bottom: 12px;
+          .icon-container {
+            position: relative;
+            top: 3px;
+          }
+        }
+        .submit-btn:hover {
+          background-color: #91c1a6;
+          border-color: transparent;
+          color: #3b644d;
+        }
+        .middle-section{
+          .info{
+            padding: 10px 0px;
+            color: #3B644D;
+            border-top:1px solid #EAEAEA;
+          }
+          .input-container{
+            padding: 12px 0px;
+            .ant-input{
+              height: 40px;
+            }
+          }
+        }
+        .save-btn {
+          width: 100%;
+          display: flex;
+          gap: 6px;
+          justify-content: center;
+          align-items: center;
+          background-color: #d0cde0;
+          color: #46415d;
+          font-size: 16px;
+          height: 40px;
+        }
+        .save-btn:hover {
+          border-color: transparent;
+          color: #46415d;
+        }
+      }
+  }
+}

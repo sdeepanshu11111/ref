@@ -1,0 +1,66 @@
+.welcome-screen {
+  width: 600px;
+
+  h2 {
+    font-size: 28px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: #212121;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 400;
+    margin-bottom: 28px;
+
+    span {
+      color: #6450d3;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+
+  .video-tag-wraper {
+    position: relative;
+    border-radius: 8px;
+    border: 2px solid #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .overlay {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-color: #21212160;
+    }
+  }
+
+  .ant-btn {
+    width: 90%;
+    height: 66px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #514de2;
+    margin-top: 30px;
+    border-color: #514de2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-screen {
+    width: 100% !important;
+  }
+}

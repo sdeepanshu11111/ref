@@ -1,0 +1,111 @@
+.onboarding-screen5 {
+  .question-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+
+    h1 {
+      font-size: 24px;
+      color: #212121;
+      font-weight: 700;
+      text-align: left;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #505050;
+    }
+  }
+
+  .question-line {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: #505050;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+
+  .option-wrapper {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  .custom-select-btn {
+    display: flex;
+
+    align-items: center;
+    gap: 6px;
+
+    justify-content: flex-start;
+    padding: 6px 12px 6px 12px;
+    // min-width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 280px;
+
+    h1 {
+      font-size: 16px !important;
+      color: #505050;
+      font-weight: 500;
+    }
+  }
+
+  .custom-select-btn.selected {
+    background-color: #c2e2d0;
+    color: #0f0f0f;
+    border-color: #0f0f0f;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .continue-btn {
+    width: 270px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  button[disabled] {
+    background-color: #e0e0e0;
+  }
+  .back-btn {
+    background-color: #e0e0e0;
+    color: #505050;
+    width: 170px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .continue-btn {
+    background-color: #6200ea;
+    color: #fff;
+  }
+}

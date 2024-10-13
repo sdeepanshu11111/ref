@@ -1,0 +1,37 @@
+.refundInfoSection {
+  .divider-container {
+    display: flex;
+    color: #3b644d;
+    gap: 4px;
+    .item-2 {
+      border-bottom: 1px solid #dddddd;
+      flex: 1;
+      position: relative;
+      top: -8px;
+    }
+  }
+  .info-bar-container {
+    padding: 8px 13px 6px 8px;
+    display: flex;
+    gap: 4px;
+    background-color: #FAEED4;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #505050;
+    span{
+        color: #E28930;
+    }
+  }
+  .input-container{
+    margin-top: 21px;
+    .ant-input{
+        height: 40px;
+    }
+
+  }
+  .amount-row-container{
+    display: flex;
+    gap:16px
+  }
+}

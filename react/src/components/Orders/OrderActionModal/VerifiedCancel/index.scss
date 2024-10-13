@@ -1,0 +1,10 @@
+.orders-action-table.cancel-verified-order {
+  position: relative;
+  min-height: 100px;
+  max-height: 450px !important;
+  overflow: scroll !important;
+
+  .order-issue {
+    margin-top: 0px !important;
+  }
+}

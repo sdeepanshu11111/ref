@@ -1,0 +1,79 @@
+.stepsCardsSectionContainer {
+  .heading-section {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #505050;
+    font-weight: 700;
+  }
+
+  .top-bar-container-custom {
+    display: none;
+    justify-content: space-between;
+
+    .left {
+      align-self: flex-end;
+      padding-bottom: 22px;
+      width: 332px;
+
+      .heading {
+        font-size: 16px;
+        font-weight: 600;
+        color: #505050;
+        text-align: start;
+        .sp {
+          color: #514de2;
+        }
+      }
+      .progressContainer {
+        .ant-progress-outer {
+          padding-right: 0 !important;
+        }
+        .ant-progress-inner {
+          background-color: #d0cde0 !important;
+        }
+
+        .ant-progress-bg {
+          height: 16px !important;
+          background: #6450d3 !important;
+        }
+        .ant-progress-text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .cards-container {
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // justify-content:center;
+    gap: 16px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 6px 6px 0 0 !important;
+
+    .cardContainer {
+      flex: 1 1 auto;
+      flex-basis: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stepsCardsSectionContainer {
+    .cards-container {
+      justify-content: center;
+      padding: 12px;
+      .cardContainer {
+        min-width: 100% !important;
+      }
+    }
+
+    .top-bar-container-custom {
+      display: flex;
+    }
+  }
+}

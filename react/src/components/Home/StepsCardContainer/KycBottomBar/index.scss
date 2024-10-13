@@ -1,0 +1,61 @@
+.card-kyc-bottom {
+  flex: 3;
+  text-align: center;
+  .first-row {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .submit-btn {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 248px;
+      font-size: 14px;
+      background: linear-gradient(to right, #5262d9, #705be5);
+      border-color: transparent;
+      color: #fff;
+      .icon-container {
+        position: relative;
+        top: 3px;
+        * {
+          stroke: #fff;
+          fill: #fff;
+        }
+      }
+    }
+    .submit-btn:hover {
+      background: linear-gradient(to right, #363f80, #463990);
+      border-color: transparent;
+    }
+  }
+  .sec-row {
+    text-align: center;
+    padding-top: 14px;
+    .ant-btn {
+      height: 40px;
+    }
+    .pr-tool {
+      font-size: 12px;
+      width: 248px;
+      color: #505050;
+      font-weight: 600;
+      border: 1px solid #505050;
+    }
+  }
+  .third-row {
+    text-align: center;
+    padding-top: 14px;
+    .pr-tool {
+      font-size: 12px;
+      width: 250px;
+      color: #505050;
+      font-weight: 600;
+      border: 1px solid #505050;
+    }
+  }
+}

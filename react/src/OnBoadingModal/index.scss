@@ -1,0 +1,65 @@
+.onBoarding-modal {
+  width: fit-content !important;
+  padding: 0;
+  position: relative;
+
+  .custom-select-btn {
+    transition: 0.1s all linear;
+    color: #505050 !important;
+  }
+
+  .custom-select-btn:active {
+    scale: 0.95;
+  }
+
+  .ant-progress {
+    font-size: 4px;
+    height: 6px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+
+    .ant-progress-inner,
+    .ant-progress-bg {
+      border-radius: 0px !important;
+    }
+  }
+
+  .question-line {
+    gap: 12px !important;
+    > h1 {
+      text-align: left;
+      line-height: 26px !important;
+    }
+  }
+
+  .ant-modal-content {
+    position: relative;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+  }
+
+  .onboarding-screen3,
+  .onboarding-screen4,
+  .onboarding-screen5 {
+    min-width: auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 38px 40px 32px 40px;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+}
+@media screen and (max-width: 768px) {
+  .onboarding-screen3,
+  .onboarding-screen4,
+  .onboarding-screen5 {
+    // margin: 32px;
+  }
+}

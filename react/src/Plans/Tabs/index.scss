@@ -1,0 +1,63 @@
+.tabs-wraper {
+  .tabs {
+    display: flex;
+    gap: 112px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 60px;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    font-size: 24px;
+  }
+
+  .tab.selected {
+    color: #fff;
+  }
+
+  .ab {
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .Quarterly {
+    .ab {
+      width: 200px;
+
+      background: linear-gradient(260deg, #e87647 0%, #ef9e1d 100%);
+    }
+  }
+
+  .Annually {
+    .ab {
+      width: 180px;
+      background: linear-gradient(260deg, #168f64 0%, #168f64 100%);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.add-store-modal {
+  .ant-modal-content {
+    padding: 0px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .add-store-modal {
+    .custom-footer {
+      .ant-form-item-control-input-content {
+        display: flex !important;
+      }
+    }
+
+    .select-store-type-container {
+      width: auto !important;
+
+      .buttons-container {
+        flex-wrap: wrap;
+        button {
+          min-width: 300px;
+        }
+      }
+
+      .crossiconContainer {
+        top: 1px;
+        right: 0px;
+        svg {
+          path {
+            fill: #898989;
+          }
+        }
+      }
+    }
+
+    .create-store-modal-content {
+      width: auto;
+
+      .custom-footer {
+        .ant-form-item-control-input-content {
+          display: flex !important;
+        }
+      }
+    }
+
+    .create-store-modal-content-woocommerce {
+      width: auto;
+    }
+  }
+}

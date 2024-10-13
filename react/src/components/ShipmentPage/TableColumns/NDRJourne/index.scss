@@ -1,0 +1,57 @@
+.shipmentPage-ndrJourney-col {
+  padding: 16px;
+  overflow: scroll;
+  .placeholder-text{
+    color: #848484;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .row-container {
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 16px;
+    .heading {
+      color: #848484;
+      font-weight: 500;
+      margin-right: 6px;
+    }
+    .circle {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      // background-color: #efae1d;
+      position: relative;
+      top: 3px;
+      margin-right: 2px;
+    }
+    .ndr-attempt-count {
+      color: #3b644d;
+      font-weight: 500;
+    }
+    .ndr-attempt-count-red{
+      color: #B23333;
+    }
+    .stage-container {
+      color: #e28930;
+      font-weight: 500;
+    }
+    .value {
+      color: #848484;
+      font-weight: 500;
+    }
+  }
+  .modal-btn {
+    padding: 4px 9px 4px 10px;
+    font-size: 16px;
+    background-color: #f5f4fa;
+    border-color: #514de2;
+    color: #514de2;
+    border-radius: 4px;
+  }
+  .modal-btn:hover {
+    background-color: #514de2 !important;
+    border-color: #514de2 !important;
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,73 @@
+.orderTable-demo-customer-info-col {
+  position: relative;
+  padding:16px;
+  width: 378px;
+
+  border: 1.5px solid transparent;
+  overflow-y: auto;
+  .row-first {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    .name-container {
+      font-size: 14px;
+    }
+    .email-container {
+      font-size: 12px;
+      color: #848484;
+    }
+  }
+  .row-sec {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #848484;
+    .icon-container {
+      margin-right: 4px;
+    }
+  }
+  .row-third {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    .addressContainer{
+      flex:1
+    }
+    .withRed{
+        svg{
+            path{
+                fill:#E04621;
+            }
+        }
+    }
+  }
+  .rowAlert{
+    .alert-icon-container{
+    top:2px;
+    position: relative;
+    }
+    .heading{
+        color: #E04621;
+        font-weight: 600;
+    }
+  }
+  
+}
+.orderTable-demo-customer-info-col-alert{
+  background-color: #F8F0F0;
+  border: 1.5px solid #EDC4C4;
+}
+// .orderTable-customer-info-col-alert::before {
+//     content: "";
+//     position: absolute;
+//     top: -8px;
+//     left: -9px;
+//     right: 0;
+//     background-color: #ff000042;
+//     width: calc(100% + 16px);
+//     height: calc(100% + 16px);
+// }

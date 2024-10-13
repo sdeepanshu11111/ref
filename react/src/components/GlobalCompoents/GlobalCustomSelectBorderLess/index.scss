@@ -1,0 +1,36 @@
+#custom-select-borderless-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::after {
+    content: "|";
+    position: absolute;
+    color: #848484;
+    // background-color: #848484;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ant-select {
+    .ant-select-selection-item {
+      color: #514de2 !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+    }
+  }
+
+  .label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #848484;
+  }
+
+  svg {
+    path {
+      fill: #514de2 !important;
+    }
+  }
+}

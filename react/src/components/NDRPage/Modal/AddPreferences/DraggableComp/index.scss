@@ -1,0 +1,12 @@
+.dragable-list-wraper {
+  height: 380px;
+  overflow: auto;
+  li {
+    list-style: none;
+
+  }
+
+  .dragable-area {
+    padding-left: 0px;
+  }
+}

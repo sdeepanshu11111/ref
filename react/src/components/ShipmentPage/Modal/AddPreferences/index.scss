@@ -1,0 +1,76 @@
+.add-preferences-shipment-modal-container{
+    .mainContainer{
+        padding: 16px;
+        padding-bottom: 8px;
+        .heading{
+            color: #848484;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        .reset-container{
+          text-align: end;
+      
+          .icon-container{
+            margin-right: 8px;
+            position: relative;
+            top: 2px;
+          }
+    
+        }
+    }
+    .footer-container {
+        padding: 16px;
+        padding-top: 2px;
+        .submit-btn {
+          width: 100%;
+          display: flex;
+          gap: 6px;
+    
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          font-size: 16px;
+          background-color: #c2e2d0;
+          border-color: transparent;
+          color: #3b644d;
+          margin-bottom: 12px;
+          .icon-container {
+            position: relative;
+            top: 3px;
+          }
+        }
+        .submit-btn:hover {
+          background-color: #91c1a6;
+          border-color: transparent;
+          color: #3b644d;
+        }
+        .middle-section {
+          .info {
+            padding: 10px 0px;
+            color: #3b644d;
+            border-top: 1px solid #eaeaea;
+          }
+          .input-container {
+            padding: 12px 0px;
+            .ant-input {
+              height: 40px;
+            }
+          }
+        }
+        .save-btn {
+          width: 100%;
+          display: flex;
+          gap: 6px;
+          justify-content: center;
+          align-items: center;
+          background-color: #d0cde0;
+          color: #46415d;
+          font-size: 16px;
+          height: 40px;
+        }
+        .save-btn:hover {
+          border-color: transparent;
+          color: #46415d;
+        }
+      } 
+}

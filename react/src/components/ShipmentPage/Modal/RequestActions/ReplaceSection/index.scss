@@ -1,0 +1,45 @@
+.rePlaceInfoSection {
+  .divider-container {
+    display: flex;
+    color: #3b644d;
+    gap: 4px;
+    .item-2 {
+      border-bottom: 1px solid #dddddd;
+      flex: 1;
+      position: relative;
+      top: -8px;
+    }
+  }
+  .info-bar-container {
+    padding: 8px 13px 6px 8px;
+    display: flex;
+    gap: 4px;
+    background-color: #faeed4;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #505050;
+    span {
+      color: #e28930;
+    }
+  }
+  .select-container {
+    padding-top: 12px;
+  }
+  .ant-select {
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+    svg {
+      transition: 0.3s all linear;
+    }
+  }
+  .ant-select-open {
+    .ant-select-arrow {
+      svg {
+        transition: all 0.2s linear;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

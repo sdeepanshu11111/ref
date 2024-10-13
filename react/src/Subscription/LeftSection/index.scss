@@ -1,0 +1,54 @@
+.subscription-left-screen {
+  flex: 1.1;
+  min-height: 100vh;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 36px;
+    padding-bottom: 52px;
+    padding-top: 80px;
+
+    h1 {
+      text-align: center;
+      line-height: 26px;
+      font-size: 20px;
+      color: #505050;
+      font-weight: 400;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .list-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      row-gap: 24px;
+      column-gap: 32px;
+
+      flex-wrap: wrap;
+      .pointer {
+        min-width: 180px;
+        // flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .boy-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

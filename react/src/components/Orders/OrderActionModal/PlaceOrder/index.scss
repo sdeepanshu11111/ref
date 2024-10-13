@@ -1,0 +1,108 @@
+.orders-action-table.place-order {
+  position: relative;
+  min-height: 100px;
+  max-height: 450px !important;
+  overflow: scroll !important;
+}
+
+.place-order-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  .channel-branding {
+    width: 100%;
+    background-color: #fffaef;
+    border-radius: 4px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #505050;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+    svg {
+      margin-right: 6px;
+    }
+
+    span {
+      color: #e28930;
+      text-decoration: underline;
+    }
+  }
+
+  .ant-btn-primary {
+    background-color: #168f64 !important;
+    padding-left: 92px;
+    padding-right: 92px;
+    margin-top: 12px;
+    height: 40px;
+
+    span {
+      color: #fff !important;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+    }
+
+    &:hover {
+      background-color: #0e5b40 !important;
+
+      span {
+        color: #fff !important;
+      }
+    }
+  }
+
+  .ant-btn-primary[disabled] {
+    background-color: #f8f8f8 !important;
+    span {
+      color: #898989 !important;
+    }
+  }
+}
+
+.global-table.error-orders-table {
+  .not-serviceable {
+    color: #505050;
+    font-weight: 500;
+    font-size: 14px;
+    .txt{
+      margin-bottom: 12px;
+    }
+    .raise-sourcing-btn{
+      .icon-container{
+        margin-left: 4px;
+        position: relative;
+        top:1px;
+        path{
+          fill:#fff
+        }
+      }
+    }
+  }
+
+  .address-error-row {
+    td:first-of-type {
+      border-left: 1px solid #f0f0f0 !important;
+    }
+    td:last-of-type {
+      padding: 0px !important;
+
+      #orderTable-customer-info-col-custom-abolute {
+        height: 116px !important;
+      }
+    }
+  }
+
+  .not-adress-error {
+    td:first-of-type {
+      border-left: 1px solid #f0f0f0 !important;
+    }
+  }
+
+  .ant-table-cell {
+    border-inline-end: 1px solid #f0f0f0 !important;
+  }
+}

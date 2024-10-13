@@ -1,0 +1,55 @@
+.shipment-status-col {
+  padding: 20.5px 16px 9.5px 16px;
+  position: relative;
+  overflow-y: auto;
+  .status-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .status-container {
+      padding: 5px 7px 4px 8px;
+      width: fit-content;
+      border-radius: 2px;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .days-container {
+      color: #72a779;
+      font-style: italic;
+      font-size: 14px;
+      font-size: 14px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .date-container {
+    font-size: 14px;
+    color: #848484;
+    line-height: 14px;
+
+    margin-bottom: 6px;
+  }
+  .modal-btn {
+    padding: 4px 9px 4px 10px;
+    font-size: 16px;
+    background-color: #f5f4fa;
+    border-color: #514de2;
+    color: #514de2;
+    border-radius: 4px;
+  }
+  .modal-btn:hover {
+    background-color: #514de2 !important;
+    border-color: #514de2 !important;
+    color: #fff !important;
+  }
+  .tracking-link {
+    padding: 5px 7px 4px 8px;
+    width: fit-content;
+    border-radius: 6px;
+    color: #514de2;
+    background-color: #f5f4fa;
+    border: 1px solid #514de2;
+    margin-top: 10px;
+  }
+}

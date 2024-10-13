@@ -1,0 +1,37 @@
+.shipment-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  margin-top: -20px;
+  margin-left: -32px;
+  margin-right: -32px;
+
+  padding: 20px 32px 18px 32px;
+  padding-bottom: 0px;
+  // border-bottom: 1px solid #dddddd;
+
+  .ant-tabs {
+    width: 100%;
+
+    .ant-tabs-tab-active {
+      > div {
+        font-weight: 500;
+      }
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 0px !important;
+
+      &::after {
+        border-color: #dddddd;
+      }
+    }
+  }
+}
+
+.shipment-tabs-wraper {
+  .ant-tabs-nav {
+    margin-bottom: 0px !important;
+  }
+}

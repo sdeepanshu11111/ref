@@ -1,0 +1,69 @@
+.updateNoteModal {
+  .note-text-area-container {
+    padding: 16px;
+  }
+  .tagAreaContainer {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    .tag {
+      padding: 6px 10px 5px;
+      border-radius: 2px;
+      margin-inline-end: 0px;
+
+      .icon-container {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .old-tag {
+      color: #848484;
+      background-color: #eaeaea;
+    }
+    .current-tag {
+      color: #848484;
+      background-color: #d2ddcd;
+    }
+  }
+  .footer-container {
+    padding: 16px;
+    padding-top: 24px;
+    .submit-btn {
+      width: 100%;
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      font-size: 16px;
+      background-color: #c2e2d0;
+      border-color: transparent;
+      color: #3b644d;
+      margin-bottom: 8px;
+      .icon-container {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .submit-btn:hover {
+      background-color: #91c1a6;
+      border-color: transparent;
+      color: #3b644d;
+    }
+    .save-btn {
+      width: 100%;
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      background-color: #d0cde0;
+      color: #46415d;
+      font-size: 16px;
+    }
+    .save-btn:hover {
+      border-color: transparent;
+      color: #46415d;
+    }
+  }
+}

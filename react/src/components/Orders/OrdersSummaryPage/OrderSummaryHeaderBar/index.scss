@@ -1,0 +1,15 @@
+.orderSummarypage-header-bar {
+  display: flex;
+  flex-direction: row;
+  // gap: 12px;
+ justify-content: space-between;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 24px 32px 18px 32px;
+  .heading{
+    color: #848484;
+    font-size: 14px;
+  }
+
+}
+

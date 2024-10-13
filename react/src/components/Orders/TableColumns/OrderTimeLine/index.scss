@@ -1,0 +1,51 @@
+.order-timelime-col {
+  padding: 20.5px 14px 9.5px 16px;
+  color: #848484;
+  font-size: 14px;
+  overflow-y: auto;
+  .ant-timeline {
+    color: #848484;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .ant-timeline .ant-timeline-item-head {
+    background-color: inherit;
+  }
+  .ant-timeline .ant-timeline-item-head-custom {
+    padding-block: 0px;
+    .dot {
+      width: 10px;
+      display: inline-block;
+      height: 10px;
+      background-color: #91c1a6;
+      border-radius: 50px;
+    }
+
+    .dot-current {
+      width: 10px;
+      display: inline-block;
+      height: 10px;
+      background-color: #514de2;
+      border-radius: 50px;
+      outline: 4px solid #dddddd;
+      animation: pulse 3s infinite linear;
+    }
+    @keyframes pulse {
+      0% {
+        outline: 4px solid #dddddd;
+      }
+      25% {
+        outline: 2px solid #dddddd;
+      }
+
+      100% {
+        outline: none;
+      }
+    }
+  }
+
+  .heading {
+  }
+  .date-container {
+  }
+}

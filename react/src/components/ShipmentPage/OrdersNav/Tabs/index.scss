@@ -1,0 +1,48 @@
+.shipment-tabs-wraper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  .ant-tabs-tab-btn {
+    font-size: 16px !important;
+    color: #848484;
+  }
+
+  .ant-btn {
+    background-color: #d0cde0 !important;
+    color: #46415d !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #514de2;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 3px;
+  left: 0;
+  background-color: #514de2;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,0 +1,31 @@
+.custom-textarea-container {
+  position: relative;
+  .label {
+    position: absolute;
+    padding: 0px;
+    top: -6px;
+    left: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    z-index: 99;
+    width: auto;
+    border-radius: 10px !important;
+    background-color: #fff !important;
+    border: none;
+    color: #918cad;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 11px;
+  }
+
+  .ant-input {
+    border-radius: 6px !important;
+    // background-color: #F5F5F5;
+    // border-color: #DDDDDD;
+    font-size: 14px;
+  }
+  .custom-textarea{
+    min-height: 87px;
+    padding :14px 12px; 
+  }
+}

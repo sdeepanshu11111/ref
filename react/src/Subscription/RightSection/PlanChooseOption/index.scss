@@ -1,0 +1,122 @@
+.plan-option-wraper {
+  .divider-text {
+    margin-bottom: 8px;
+  }
+  .ant-radio-wrapper {
+    position: relative;
+    padding: 16px;
+    margin-bottom: 16px !important;
+    font-size: 24px;
+    width: 100%;
+    background: #ffffff !important;
+    border-radius: 4px !important;
+    border: 2px solid #dddddd !important;
+
+    .ant-radio {
+      width: auto !important;
+    }
+
+    > span {
+      width: 100%;
+    }
+  }
+
+  .ant-radio-inner {
+    min-height: 20px;
+    min-width: 20px;
+  }
+
+  .text-wraper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .plan-name-radio {
+      font-size: 20px;
+      color: #6450d3;
+      font-weight: 800;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+    width: 100%;
+    color: #766f9a;
+    span {
+      color: #e55b5b;
+    }
+  }
+
+  .ant-radio-wrapper {
+    .ant-radio-inner {
+      background-color: #dddddd;
+      border-color: #dddddd;
+    }
+    span {
+      padding-right: 0px !important;
+    }
+  }
+
+  .ant-radio-wrapper-checked {
+    background: #f5f4fa !important;
+    border: 2px solid #514de2 !important;
+
+    h1 {
+      color: #514de2 !important;
+    }
+
+    .ant-radio-inner {
+      background: #6450d3 !important;
+      border-color: #6450d3 !important;
+
+      &::after {
+        // display: none !important;
+        top: 50%;
+        right: 50%;
+        height: 11px;
+        width: 11px;
+        transform: translate(-50%, -50%);
+        margin-block-start: 0;
+        margin-inline-start: 0;
+      }
+
+      .plan-option-wraper {
+        h1 {
+          color: #514de2 !important;
+        }
+      }
+    }
+    .text-wraper {
+      span {
+        display: none;
+      }
+      .plan-name-radio {
+        display: none !important;
+      }
+    }
+
+    p {
+      color: #212121 !important;
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      font-style: italic;
+      line-height: 22px;
+      font-weight: 700;
+
+      span {
+        color: #6450d3 !important;
+        font-size: 22px;
+        margin-left: 4px;
+        font-weight: 800;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.step-card {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 6px;
+  position: relative;
+  height: 100%;
+  min-height: 320px;
+  .icon-container {
+    line-height: 0;
+    margin-bottom: 8px;
+  }
+  .card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212121;
+  }
+  .info-container {
+    // flex:1;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 28px;
+    font-size: 14px;
+    color: #505050;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 4px;
+    color: #505050;
+  }
+  .info-completed {
+    flex: 1;
+  }
+  .labelpending {
+    position: absolute;
+    left: -1px;
+    border: 1px solid #b23333;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 500;
+    top: 12px;
+    background-color: #ffffff;
+    color: #b23333;
+  }
+  .labelcomplete {
+    position: absolute;
+    left: 0;
+
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 700;
+    top: 12px;
+    background-color: #168f64;
+    color: #ffffff;
+  }
+}
+.linkcard {
+  border-color: #9093b4;
+  background-color: rgba(208, 205, 224, 50%);
+}
+.linkcard:hover {
+  background-color: #d0cde0;
+}
+.productcard {
+  border-color: #b5a683;
+  background-color: rgba(248, 227, 209, 50%);
+}
+.productcard:hover {
+  background-color: #f8e3d1;
+}
+.kyccard {
+  border-color: #76a79a;
+  background-color: rgba(180, 221, 215, 50%);
+}
+.kyccard:hover {
+  background-color: #b4ddd7;
+}
+.completedcard {
+  border-color: #168f64;
+  background-color: #fff;
+}
+.completedcard:hover {
+  background-color: #fff;
+}

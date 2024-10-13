@@ -1,0 +1,219 @@
+.sidebar {
+  background-color: #212121 !important;
+  // position: absolute !important;
+  min-height: 100vh !important;
+  z-index: 999;
+
+  .ant-menu-submenu-selected {
+    background-color: #505050 !important;
+
+    ul {
+      background-color: #505050 !important;
+      li {
+        background-color: #505050 !important;
+      }
+
+      .ant-menu-item-selected {
+        background-color: #dddddd !important;
+      }
+    }
+  }
+
+  .custom-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-sidebar-icon-container {
+    position: relative;
+    top: -2px;
+  }
+  .user-dropdown-wraper {
+    margin-bottom: 12px;
+
+    * {
+      color: #fff !important;
+    }
+    .ant-dropdown-trigger {
+      svg {
+        * {
+          fill: #fff !important;
+        }
+      }
+    }
+  }
+
+  .sidebar-store-wraper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 2px 3px #00000016;
+    border-bottom: 1px solid #dddddd;
+
+    * {
+      transition: 0.3s all linear;
+    }
+
+    .icon.true {
+      span {
+        opacity: 0;
+        width: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .ant-menu {
+    background-color: #212121 !important;
+
+    .ant-menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      width: auto;
+      height: 36px;
+      margin-bottom: 10px !important;
+      border-radius: 0px;
+
+      .ant-menu-title-content {
+        margin-inline-start: 10px !important;
+      }
+
+      svg {
+        min-width: 20px !important;
+        max-width: 20px !important;
+        min-height: 20px !important;
+        max-height: 20px !important;
+        font-size: 20px !important;
+      }
+
+      svg,
+      g,
+      path {
+        fill: #fff;
+      }
+    }
+
+    .ant-menu-item-selected {
+      background-color: #f5f5f5;
+      color: #212121;
+
+      svg,
+      g,
+      path {
+        fill: #000000;
+        stroke: #000000;
+      }
+    }
+
+    .ant-menu-submenu {
+      margin-bottom: 10px;
+      .ant-menu-submenu-title {
+        display: flex;
+        align-items: center;
+        margin: 0px !important;
+        // padding-inline: calc(50% - 12px - 4px);
+
+        svg {
+          min-height: 24px;
+          min-width: 24px;
+        }
+        .ant-menu-title-content {
+          min-width: 100px;
+          // margin-inline-start: 7px;
+        }
+      }
+    }
+  }
+}
+
+.ant-layout-sider-collapsed {
+  .ant-menu-title-content {
+    opacity: 0 !important;
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s,
+      color 0.3s;
+  }
+}
+
+.mobile-sidebar {
+  .ant-drawer-body {
+    background-color: #212121 !important;
+  }
+  .ant-menu-submenu {
+    .ant-menu-submenu-title {
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+    }
+  }
+  .ham {
+    padding-right: 6px;
+    background-color: #fff;
+  }
+
+  .ant-drawer-body {
+    padding: 0px !important;
+  }
+
+  .ant-menu {
+    background-color: #212121 !important;
+    .ant-menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      width: auto;
+      // height: 60px;
+      border-radius: 0px;
+
+      .ant-menu-title-content {
+        margin-inline-start: 10px !important;
+      }
+
+      svg {
+        min-width: 24px;
+      }
+
+      svg,
+      g,
+      path {
+        fill: #fff;
+      }
+    }
+
+    .ant-menu-item-selected {
+      // background-color: #f5f5f5;
+      background-color: #514de2;
+
+      color: #fff;
+
+      svg,
+      g,
+      path {
+        fill: #000000;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    // width: 64px !important;
+    // min-width: 64px !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

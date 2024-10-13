@@ -1,0 +1,106 @@
+.addnotebulk-container {
+  .main-container {
+    padding: 16px 16px;
+    .ant-input {
+      background-color: #f5f5f5;
+      border-color: #dddddd;
+    }
+    .heading {
+      font-size: 14px;
+      color: #848484;
+    }
+    .bulk-search-input-container {
+      padding: 8px 0px 16px;
+    }
+    .tag-container {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #dddddd;
+      max-height: 256px;
+      overflow-y: auto;
+
+      .tag {
+        display: inline-flex;
+        gap: 4px;
+        color: #514de2;
+        padding: 10px 14px 8px 8px;
+        background-color: #f5f4fa;
+        height: 32px;
+        line-height: 14px;
+        border-radius: 4px;
+        font-weight: 700;
+        svg {
+          position: relative;
+          cursor: pointer;
+          top: -1px;
+          path {
+            fill: #918cad;
+          }
+        }
+      }
+      .current-tag {
+        color: #848484;
+        background-color: #d2ddcd;
+      }
+
+      .plus-order-container {
+        display: inline-flex;
+        gap: 4px;
+        color: #766f9a;
+        padding: 10px 14px 8px 8px;
+        background-color: #f5f4fa;
+        height: 32px;
+        line-height: 14px;
+        border-radius: 4px;
+        font-weight: 600;
+      }
+    }
+    .clear-btn-container {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+    .clear-btn {
+      color: #e55b5b;
+      font-size: 14px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .clear-btn:hover {
+      color: #e55b5b;
+    }
+  }
+  .footer-container {
+    padding-top: 24px;
+    .submit-btn {
+      width: 100%;
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      font-size: 16px;
+      background-color: #c2e2d0;
+      border-color: transparent;
+      color: #3b644d;
+      .icon-container {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .submit-btn:hover {
+      background-color: #91c1a6;
+      border-color: transparent;
+      color: #3b644d;
+    }
+  }
+}
+
+.test {
+  display: none;
+}

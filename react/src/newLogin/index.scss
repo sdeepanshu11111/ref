@@ -1,0 +1,140 @@
+.new-login {
+  input {
+    height: 40px !important;
+    border-radius: 4px !important;
+    border: 1px solid #eaeaea !important;
+    background: #ffffff !important;
+    font-size: 14px;
+    padding: 10px 0 10px 16px !important;
+  }
+
+  ::placeholder {
+    color: #848484 !important;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+  }
+
+  ::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: red;
+  }
+
+  .ant-input-affix-wrapper {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #eaeaea !important;
+    input {
+      // border: none !important;
+    }
+  }
+
+  .ant-input-password {
+    border: 1px solid #eaeaea !important;
+    background-color: #f5f5f5 !important;
+
+    input {
+      border: none !important;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    background-color: #fff !important;
+    padding: 0px !important;
+    padding-right: 12px !important;
+  }
+
+  .ant-form-item-control-input-content {
+    .react-tel-input {
+      // display: none;
+
+      input {
+        padding-left: 44px !important;
+      }
+
+      .flag-dropdown {
+        background: #fff !important;
+        border-color: #eaeaea !important;
+      }
+    }
+  }
+
+  .row-container {
+    display: flex;
+    gap: 11px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    > div {
+      flex: 1;
+      min-width: 250px;
+    }
+    .ant-form-item {
+    }
+  }
+
+  .ant-form-vertical .ant-form-item-label > label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #212121;
+  }
+  .ant-form-item-label {
+    padding: 0 0 4px !important;
+  }
+  .ant-form-item-required::before {
+    content: "" !important;
+  }
+  .ant-form-item {
+    margin-bottom: 0px;
+  }
+
+  .submit-btn {
+    transition: 0.3s all linear;
+    border-radius: 4px !important;
+    height: 56px !important;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    // margin-top: 24px;
+    // margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    background: #514de2;
+    border: none;
+  }
+
+  .submit-btn:hover {
+    transition: 0.3s all linear;
+    width: 100%;
+    background: #3b37c3 !important;
+  }
+
+  .continue-btn:hover {
+    transition: 0.3s all linear;
+    width: 100%;
+    background: #3b37c3 !important;
+  }
+  // }
+
+  .hidden-image {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .heading-container,
+    .heading-bar {
+      * {
+        text-align: center !important;
+      }
+    }
+
+    .hidden-image {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

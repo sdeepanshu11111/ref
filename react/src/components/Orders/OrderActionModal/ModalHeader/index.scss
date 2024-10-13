@@ -1,0 +1,23 @@
+.action-modal-header {
+  padding: 0px 24px;
+  padding-bottom: 22px;
+  box-shadow: 0 2px 3px #00000021;
+  margin: 0px -24px;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+    // margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #848484;
+  }
+}

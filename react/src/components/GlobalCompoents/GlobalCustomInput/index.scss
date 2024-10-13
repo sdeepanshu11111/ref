@@ -1,0 +1,24 @@
+.input-container-custom {
+  // margin: 12px;
+
+  .ant-input {
+    border-radius: 6px !important;
+  }
+
+  .ant-input-group-addon {
+    position: absolute;
+    padding: 0px;
+    top: -6px;
+    left: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    z-index: 99;
+    width: auto;
+    border-radius: 10px !important;
+    background-color: #fff !important;
+    border: none;
+    color: #918cad;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

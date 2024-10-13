@@ -1,0 +1,205 @@
+.plans-page-wraper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  // background: rgb(112, 91, 229);
+  padding: 42px 46px;
+  background: linear-gradient(
+    260deg,
+    rgba(142, 91, 194, 1) 0%,
+    rgba(112, 91, 229, 1) 100%
+  );
+
+  .backdashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .plans-header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 989899899;
+    gap: 12px;
+    justify-content: space-between;
+
+    a {
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 2px;
+      padding: 5px 15px;
+      font-weight: 700;
+      svg {
+        vertical-align: middle;
+        margin-right: 5px;
+        path {
+          fill: #fff !important;
+        }
+      }
+      &:hover {
+        background-color: #fff;
+        color: #8c5bc5;
+        cursor: pointer;
+        svg {
+          path {
+            fill: #8c5bc5 !important;
+          }
+        }
+      }
+    }
+  }
+  .plans-table-container {
+    padding: 0 46px;
+    .plans-header {
+      text-align: center;
+      margin-top: 38px;
+
+      h2 {
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  .expandable-div {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    .expand-button {
+      margin-top: -24px;
+      background: #f5f4fa !important;
+      padding: 9px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      border: 1px solid #848484;
+      cursor: pointer;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+        color: #6450d3;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .footer-ic {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    padding-bottom: 105px;
+  }
+}
+
+.plans-page-wraper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 640px;
+  top: 0;
+  background-repeat: no-repeat;
+  height: 602px;
+  background-size: cover;
+  background-image: url(./bg.svg);
+}
+
+.plans-page-wraper.mobile::before {
+  display: none !important;
+}
+.plans-page-wraper.mobile {
+  // ::before {
+  //   width: 200px !important;
+  // }
+  padding: 42px 12px !important;
+
+  .saving-div {
+    border-radius: 20px;
+    background-color: #fede62;
+    padding: 5px 4px !important;
+    font-size: 12px;
+    color: #212121;
+    display: none !important;
+  }
+  .plans-header-wrapper {
+    flex-wrap: nowrap !important;
+    align-items: center;
+
+    a {
+      font-size: 12px !important;
+    }
+  }
+
+  .plans-table-container {
+    padding: 0px !important;
+    .plans-header {
+      p {
+        font-size: 16px !important;
+      }
+    }
+
+    .current-plan {
+      color: #fff !important;
+      span {
+        color: #fff !important;
+      }
+    }
+
+    .tabs {
+      gap: 24px !important;
+      flex-wrap: wrap !important;
+      row-gap: 62px !important;
+      margin-bottom: 26px !important;
+      .tab {
+        // min-width: 350px !important;
+        // border: 2px solid #fff !important;
+        background-color: #6450d320;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        flex: auto;
+        padding-top: 4px !important;
+        min-width: 80px !important;
+        font-size: 16px !important;
+        padding: 12px !important;
+
+        .ab {
+          display: none !important;
+          font-size: 12px !important;
+          width: 150px !important;
+        }
+      }
+
+      .Annually {
+      }
+    }
+  }
+  .action-cell {
+    h1 {
+      font-size: 18px !important;
+      padding: 0px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 967px) {
+}
+@media screen and (max-width: 768px) {
+}

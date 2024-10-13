@@ -1,0 +1,29 @@
+.snap-short-recommend-main-container {
+  display: flex;
+  // justify-content: center;
+  row-gap: 16px;
+  column-gap: 32px;
+  flex-wrap: wrap;
+  .item {
+    width: calc(50% - 16px);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 15px 10px 15px 16px;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #fffaef;
+    }
+    .label-container {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
+      color: #212121;
+    }
+  }
+}

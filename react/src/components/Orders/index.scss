@@ -1,0 +1,48 @@
+.order-page {
+  padding-bottom: 34px !important;
+}
+
+.global-table.orders-table {
+  .ant-table-container {
+    border: none !important;
+  }
+
+  .ant-table-title {
+    border-color: #dddddd !important;
+    border-radius: 4px 4px 0 0 !important;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      background-color: #46415d !important;
+      padding-left: 16px !important;
+      color: #fafafa !important;
+    }
+    .product-detail-heading-container {
+      display: flex;
+      justify-content: space-between;
+      .qty {
+        margin-right: 46px;
+      }
+    }
+  }
+
+  .ant-table-body {
+    .ant-table-cell {
+      border-bottom: 8px solid #ffffff !important;
+      padding: 0px !important;
+      min-height: 150px !important;
+      min-height: 150px !important;
+      // outline: 10px solid red;
+    }
+  }
+}
+
+.orders-table.in_processing {
+  .order-details-cell,
+  .order-detail-heading-container {
+    .ant-checkbox-wrapper {
+      display: none;
+    }
+  }
+}

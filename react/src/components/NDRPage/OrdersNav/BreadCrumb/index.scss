@@ -1,0 +1,53 @@
+.bread-crumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  h1,
+  h2,
+  span {
+    font-size: 16px;
+    color: #848484;
+    font-weight: 600;
+  }
+
+  .ant-select {
+    .ant-select-arrow {
+      margin-top: -4px !important;
+      svg {
+        transition: 0.2s all linear;
+        path {
+          fill: #848484 !important;
+        }
+      }
+    }
+
+    .ant-select-selector {
+      background: transparent !important;
+      border: none !important;
+      padding-left: 0px !important;
+      box-shadow: none !important;
+      .ant-select-selection-item {
+        font-size: 16px !important;
+        color: #848484 !important;
+        font-weight: 600 !important;
+        align-self: flex-end !important;
+      }
+    }
+  }
+
+  .ant-select-open {
+    svg {
+      transition: 0.2s all linear;
+      transform: rotate(180deg);
+    }
+  }
+}

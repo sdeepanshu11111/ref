@@ -1,0 +1,210 @@
+.QuestionSection {
+  .question-line {
+    text-align: center;
+    margin-bottom: 25px;
+    h1 {
+      font-size: 24px;
+      color: #212121;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #505050;
+    }
+    .question-byline {
+      font-weight: 500;
+      font-size: 16px;
+      font-style: italic;
+      color: #505050;
+    }
+    .question-multiselect-byline-area {
+      display: flex;
+      justify-content: space-between;
+      div:nth-child(1) {
+        opacity: 0;
+      }
+      div:nth-child(1) {
+      }
+      div:nth-child(1) {
+      }
+    }
+  }
+  .option-wrapper {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 1;
+      min-width: 200px;
+    }
+    .custom-select-btn > label {
+      pointer-events: none;
+    }
+  }
+  .option-wrapper.bylinecont {
+    font-weight: 600;
+    font-size: 16px;
+    color: #505050;
+    line-height: 22px;
+    .custom-select-btn {
+      div {
+        text-align: left;
+        margin: 10px 0;
+      }
+      span {
+        display: block;
+        font-style: italic;
+        font-weight: 500;
+        color: #505050;
+        line-height: 22px;
+      }
+    }
+    .custom-select-btn.selected {
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .option-wrapper.row2-singleselect {
+    display: block;
+    .custom-select-btn {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  .custom-select-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: 40px;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #c2e2d0;
+      border-color: #0f0f0f !important;
+
+      svg {
+        path {
+          fill: #76a79a;
+        }
+      }
+    }
+    .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+      &:after {
+        border-color: #3b644d !important;
+      }
+    }
+  }
+
+  .custom-select-btn.selected {
+    background-color: #3b644d;
+    color: #fff;
+    border-color: #0f0f0f;
+    font-weight: 700;
+
+    label {
+      color: #fff !important;
+      font-weight: 700;
+    }
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+    .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #fff;
+      &:after {
+        border-color: #3b644d !important;
+      }
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ant-progress {
+      font-size: 4px;
+      height: 10px;
+      position: absolute;
+      z-index: 99;
+      bottom: 0;
+      left: 0;
+      .ant-progress-inner,
+      .ant-progress-bg {
+        border-radius: 0px !important;
+        height: 10px !important;
+        border-bottom-left-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+      }
+    }
+  }
+
+  .continue-btn {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 28px 0 38px 0;
+    background-color: #514de2;
+    color: #fff;
+    width: 100%;
+    box-shadow: unset;
+  }
+  .previous-question-btn-wrapper {
+    margin-top: 28px;
+    a {
+      color: #848484;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    svg {
+      margin-right: 5px;
+      vertical-align: middle;
+      transition: all 0.5s;
+    }
+  }
+  .previous-question-btn-wrapper:hover {
+    a {
+      color: #212121;
+    }
+    svg {
+      margin-right: 15px;
+      transition: all 0.5s;
+      path {
+        fill: #212121;
+      }
+    }
+  }
+  button[disabled] {
+    background-color: #716def;
+  }
+
+  .back-btn {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+}
+@media screen and (max-width: 768px) {
+  .question-multiselect-byline-area {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+export const bucket = {
+  0: "Exception",
+  1: "Customer Unavailable",
+  2: "Rejected by Customer",
+  3: "Delivery Rescheduled",
+  4: "No Attempt",
+  5: "Customer Unreachable",
+  6: "Address Issue",
+  7: "Payment Issue",
+  8: "Out of Delivery Area",
+  9: "Order Already Cancelled",
+  10: "Self Collect",
+  11: "Shipment Seized by Customer",
+  12: "Customer Wants Open Delivery",
+  13: "Shipment Misrouted by Logistics Partner",
+  14: "OTP-Based Cancellation",
+};

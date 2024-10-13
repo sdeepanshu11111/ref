@@ -1,0 +1,192 @@
+.table-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    .combo-button-container {
+      display: flex;
+
+      .ant-btn {
+        height: 40px;
+        padding: 0px;
+        border-radius: 6px !important;
+        border: 1px solid #dddddd;
+        background-color: #eaeaea;
+      }
+      .left-btn {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      .left-btn-active {
+        background-color: #514de2 !important;
+        border-color: #514de2 !important;
+        path {
+          fill: #fff;
+        }
+      }
+      .right-btn {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+      }
+      .left-btn:hover,
+      .right-btn:hover {
+        border: 1px solid #46415d;
+        background-color: #46415d;
+        * {
+          stroke: #ffffff;
+          fill: #ffffff;
+        }
+      }
+      .right {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 9px;
+        svg {
+          path {
+            fill: #848484;
+          }
+        }
+      }
+
+      svg {
+        transition: all 0.2s linear !important;
+      }
+
+      .ant-dropdown-open {
+        .right {
+          svg {
+            transition: all 0.2s linear;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-container {
+    background-color: #c2e2d0;
+    font-size: 16px;
+
+    color: #3b644d;
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    .sec-icon-container {
+      * {
+        stroke: #3b644d;
+        fill: #3b644d;
+        transition: 0.3s all linear;
+      }
+    }
+  }
+  svg {
+    transition: all 0.2s linear !important;
+  }
+
+  .ant-dropdown-open {
+    .sec-icon-container {
+      svg {
+        transition: all 0.2s linear;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .dropdown-container.ant-dropdown-open:hover {
+    color: #ffffff !important;
+    border-color: transparent !important;
+    background-color: #91c1a6 !important;
+    transition: 0.3s all linear;
+
+    .sec-icon-container {
+      * {
+        transition: 0.3s all linear;
+      }
+    }
+  }
+
+  .dropdown-container[disabled] {
+    background-color: #f8f8f8f8 !important;
+
+    color: #898989;
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    .sec-icon-container {
+      * {
+        stroke: #898989;
+        fill: #898989;
+        transition: 0.3s all linear;
+      }
+    }
+  }
+}
+.filter-tooltip {
+  font-size: 16px;
+  background-color: #46415d;
+  color: #ffffff;
+  border-radius: 6px;
+
+  .ant-tooltip-inner,
+  .ant-tooltip-arrow::before {
+    background-color: #46415d !important;
+    --antd-arrow-background-color: ##46415d !important;
+  }
+  .ant-tooltip-inner {
+    padding: 14px 13px 12px 16px;
+  }
+}
+.order-filters-options-container {
+  .ant-dropdown-arrow::before {
+    background-color: #46415d;
+  }
+  .ant-dropdown-menu .ant-dropdown-menu-item-group-list {
+    margin: 0px 0px;
+    .ant-dropdown-menu-item {
+      padding: 0px !important;
+    }
+  }
+  .cl {
+    padding: 12px 20px 12px 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .selectedKey {
+    display: flex;
+
+    justify-content: space-between;
+    background-color: #f0f8f4;
+    color: #168f64;
+    span {
+      margin-left: 14px;
+    }
+  }
+  .ant-dropdown-menu {
+    background-color: #f5f4fa;
+    border: 1px solid #46415d;
+    border-radius: 6px !important;
+    padding: 0px;
+    .ant-dropdown-menu-item {
+      border-bottom: 1px solid #847669;
+      padding: 12px 20px 12px 12px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      .bulk-item {
+        font-size: 16px;
+        font-weight: 600;
+        color: #212121;
+        span {
+          color: #847669;
+        }
+      }
+    }
+    .ant-dropdown-menu-item:last-of-type {
+      border-bottom: 0px solid #847669;
+    }
+  }
+}

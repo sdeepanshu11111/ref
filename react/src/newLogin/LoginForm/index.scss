@@ -1,0 +1,145 @@
+.login-form {
+  background-color: #fff;
+  // min-width: 440px;
+
+  border-radius: 5px;
+
+  .forgetBtn {
+    margin-top: 4px;
+    span {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .password-item {
+    margin-bottom: 0px;
+  }
+
+  .alert-error {
+    margin-bottom: 10px;
+  }
+
+  .heading-bar {
+    margin-bottom: 18px;
+
+    .main-heading {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0;
+      color: #212121;
+      text-align: left;
+    }
+
+    .sub-heading {
+      font-size: 14px;
+      font-weight: 400;
+      color: #848484;
+      text-align: left;
+    }
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    button {
+      border: 0px solid;
+      font-weight: 600;
+
+      box-shadow: none;
+      font-size: 12px;
+      padding: 0;
+
+      span {
+        color: #6450d3 !important;
+      }
+    }
+  }
+
+  .flex-row-left {
+    justify-content: space-between;
+    align-items: center;
+
+    .ant-checkbox-wrapper {
+      span {
+        color: #212121 !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  .signup-line {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #898989;
+    gap: 6px;
+    .login-form-signup-here {
+      color: #6450d3;
+      cursor: pointer;
+    }
+  }
+
+  .contactus-line {
+    margin-top: 32px;
+    display: block;
+    text-align: center;
+    color: #212121;
+
+    a {
+      color: #0068ff !important;
+    }
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 21px;
+
+    .dividerbar {
+      flex: 1;
+      height: 1px;
+      background-color: #d0cde0;
+    }
+    .text {
+      color: #505050;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .text::after {
+      content: "";
+      height: 2px;
+      width: 200px;
+    }
+  }
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px !important;
+    height: 48px !important;
+    width: 100%;
+    font-size: 16px;
+
+    color: #505050;
+    font-weight: 500;
+    border: 1px solid #eaeaea;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    .icon-container {
+      margin-left: 6px;
+      margin-right: 6px;
+      svg {
+        position: relative;
+        top: 3px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

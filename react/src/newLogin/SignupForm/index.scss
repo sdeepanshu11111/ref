@@ -1,0 +1,243 @@
+.signUp-form-container {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .ant-checkbox-wrapper {
+    font-size: 11px;
+    color: #505050;
+    font-weight: 400;
+  }
+
+  .ant-select {
+    .ant-select-arrow {
+      svg {
+        transition: 0.3s all linear;
+      }
+    }
+  }
+
+  .ant-select-open {
+    .ant-select-arrow {
+      svg {
+        transition: 0.3s all linear;
+        transform: rotate(180deg);
+        path {
+          fill: #514de2;
+        }
+      }
+    }
+  }
+
+  .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .heading-container {
+    .info-bar {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      color: #505050;
+      font-style: italic;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #d0cde0;
+      margin-bottom: 10px;
+      .ant-btn-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: #6450d3;
+        padding-right: 0px;
+        .icon-container {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .flex-logo {
+    display: none;
+  }
+
+  .heading-bar {
+    text-align: center;
+    margin-bottom: 28px;
+    .welcome-heading {
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 9px;
+    }
+    .subheading {
+      font-size: 16px;
+      color: #505050;
+    }
+  }
+
+  .invitation-code-container {
+    .invitation-code-wraper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 40px;
+      justify-content: flex-start;
+
+      h1 {
+        color: #212121;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      p {
+        margin-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p:hover {
+        svg {
+          path {
+            fill: #e28930;
+          }
+        }
+      }
+    }
+
+    .ant-switch {
+      width: 60px;
+      height: 34px;
+    }
+
+    .ant-switch .ant-switch-handle {
+      width: 26px;
+      height: 26px;
+      top: 4px;
+    }
+
+    .ant-switch-checked {
+      background-color: #3b644d; /* Green background for checked state */
+    }
+
+    .ant-switch-handle::before {
+      background-color: #fafafa; /* White toggle button */
+      border-radius: 50%;
+    }
+
+    .ant-switch-checked .ant-switch-handle {
+      left: calc(
+        100% - 26px - 4px
+      ); /* Move the handle to the right when checked */
+    }
+  }
+
+  .react-tel-input .form-control {
+    width: 100%;
+  }
+  // .ant-input-password {
+  //   padding-top: 0px;
+  //   padding-bottom: 0px;
+  //   border-radius: 4px !important;
+  //   padding-right: 8px;
+  //   border: 1px solid #898989 !important;
+  //   background-color: #f5f5f5;
+  // }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 21px;
+
+    .dividerbar {
+      flex: 1;
+      height: 1px;
+      background-color: #d0cde0;
+    }
+    .text {
+      color: #505050;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .text::after {
+      content: "";
+      height: 2px;
+      width: 200px;
+    }
+  }
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 4px !important;
+    height: 48px !important;
+    width: 100%;
+    font-size: 16px;
+
+    color: #505050;
+    font-weight: 500;
+    border: 1px solid #eaeaea;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    .icon-container {
+      margin-left: 14px;
+      margin-right: 8px;
+      svg {
+        position: relative;
+        top: 3px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  // .signup-right-screen {
+  //   flex: 0.9;
+  //   padding-top: 15px;
+  //   padding-bottom: 20px;
+  //   padding-right: 20px;
+  //   img {
+  //     height: 100%;
+  //     // width: auto;
+  //     min-width: 350px;
+  //     background-position: center;
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //     height: calc(100vh - 42px);
+
+  //     border-radius: 5px;
+  //   }
+
+  //   // background: url(../../assets//signupRightBanner.svg);
+  // }
+}
+
+@media screen and (max-width: 967px) {
+}
+@media screen and (max-width: 768px) {
+  .signup-left-screen {
+    padding: 24px !important;
+
+    .flex-logo {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+  }
+
+  .otp-form-container {
+    width: 98% !important;
+  }
+  .signup-right-screen {
+    display: none !important;
+  }
+}

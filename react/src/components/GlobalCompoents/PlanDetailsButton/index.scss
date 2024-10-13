@@ -1,0 +1,80 @@
+.custom-button {
+  background-color: #f5eddc; /* Background color */
+  color: #333; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 6px 16px 6px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  // min-width: 200px;
+  height: 48px;
+  width: 144px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24px;
+  // transition: all 0.3s linear;
+  position: relative;
+
+  h4 {
+    display: none;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #fff;
+    margin-right: 14px;
+  }
+
+  .plan-name {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #848484;
+    }
+
+    p {
+      font-size: 14px;
+      color: #505050;
+      font-weight: 500;
+    }
+  }
+
+  svg {
+    min-width: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+  }
+}
+
+.custom-button:hover {
+  // transition: all 0.3s linear;
+  // width: 220px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: rgb(226, 137, 48);
+  background: linear-gradient(
+    98deg,
+    rgba(233, 157, 38, 1) 100%,
+    rgba(226, 137, 48, 1) 0%
+  );
+
+  .plan-name {
+    display: none;
+  }
+
+  h4 {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .manage-subscription-topbar{
+    display: none;
+  }
+}

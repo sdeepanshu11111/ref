@@ -1,0 +1,40 @@
+.journey-bar-container {
+  padding: 15px 47px 14px 25px;
+  background-color: #f5f4fa;
+  border: 1px solid #918cad;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  .date {
+    width: 20%;
+    .dat {
+      color: #212121;
+      font-weight: 700;
+    }
+    .divider{
+      font-weight: 700;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .d {
+      color: #848484;
+      font-size: 14px;
+    }
+  }
+  .location {
+    text-align: end;
+    color: #848484;
+    font-size: 14px;
+  }
+  .remark {
+    flex: 1;
+
+    color: #212121;
+    font-weight: 700;
+  }
+}
+.current-journey-bar-container {
+  background-color: #e6f4df;
+  border: 1px solid #168f64;
+}

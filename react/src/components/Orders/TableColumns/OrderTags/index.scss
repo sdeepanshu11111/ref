@@ -1,0 +1,45 @@
+.order-tags-col-container {
+  padding: 20.5px 16px 9.5px 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap:6px;
+.tag-placeHolder{
+  color: #848484;
+  
+}
+
+ .item-1{
+  flex:1
+ }
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    .tag-container {
+      color: #848484;
+      font-size: 12px;
+      padding: 5px 10px;
+      background-color: #eaeaea;
+      border-radius: 2px;
+      line-break: anywhere;
+    }
+  }
+  .tag-btn-container {
+    // position: absolute;
+    // bottom: 0;
+    .ant-btn {
+      padding: 4px 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .icon-container {
+      position: relative;
+      left: -4px;
+      top: 4px;
+    }
+  }
+}

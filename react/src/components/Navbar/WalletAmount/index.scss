@@ -1,0 +1,50 @@
+.wallet-wrapper {
+  cursor: pointer;
+  font-size: 12px;
+  min-width: 100px;
+  max-width: 300px;
+  padding-right: 16px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #e6f4df;
+  border: 1.5px solid #3b644d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-weight: 500;
+  overflow: hidden;
+  color: #ad9b8c !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  p {
+    line-height: 16px;
+  }
+
+  span {
+    font-size: 15px;
+    color: #505050;
+    font-weight: 700;
+    white-space: pre;
+    line-height: 16px;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+
+  .ant-spin-dot-item {
+    background: #ad9b8c !important;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+//   .wallet-wrapper {
+//     display: none !important;
+//     p {
+//       display: none;
+//     }
+//   }
+// }

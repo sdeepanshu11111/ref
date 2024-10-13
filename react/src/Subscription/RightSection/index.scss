@@ -1,0 +1,111 @@
+.subscription-form {
+  margin: auto;
+  padding: 32px;
+  // border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+  margin-top: 20px;
+  margin-right: 40px;
+
+  .divider-text {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 500;
+  }
+
+  .ant-divider {
+    margin: 12px 0;
+    margin-bottom: 24px;
+    background: #848484;
+    height: 2px;
+  }
+
+  .heading {
+    margin-bottom: 6px;
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #212121 !important;
+    }
+
+    span {
+      color: #6450d3;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      font-weight: 600;
+
+      svg {
+        height: 14px !important;
+        width: 14px !important;
+        path {
+          fill: #6450d3;
+        }
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .plan-name-heading {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #505050;
+
+    span {
+      font-size: 20px !important;
+    }
+  }
+
+  label {
+    font-size: 16px !important;
+    color: #505050 !important;
+  }
+
+  .ant-radio-inner::after {
+    transform: scale(0.675);
+  }
+
+  .subscription-type {
+    .plan-name-heading {
+      font-size: 24px;
+      font-weight: 600;
+      span {
+        color: #848484;
+      }
+    }
+  }
+
+  .payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+
+    label {
+      span:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+  .ant-btn {
+    height: 60px;
+    background-color: #168f64;
+    color: #fff;
+    span {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+.subscription-form .ant-typography h2 {
+  text-align: center;
+}

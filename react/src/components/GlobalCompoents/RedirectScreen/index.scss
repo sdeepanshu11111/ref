@@ -1,0 +1,69 @@
+.redirect-screen {
+  text-align: center;
+  padding: 20px;
+  min-width: auto;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 38px 40px 32px 40px;
+  position: relative;
+  margin: 32px;
+  border-radius: 5px;
+
+  .payment-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    > div {
+      height: 300px !important;
+      width: 300px !important ;
+    }
+
+    svg {
+      font-size: 240px;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #212121;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h2 {
+    font-size: 16px;
+    color: #505050;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 24px;
+    color: #514de2;
+  }
+  .bar {
+    width: 100%;
+    height: 40px;
+    background-color: #faeed4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 20px;
+    margin-top: 32px;
+
+    .fill {
+      height: 100%;
+      width: 0;
+      background-color: #e28930;
+      animation: fillBar 3s linear forwards;
+      border-radius: 20px;
+    }
+  }
+}
+
+@keyframes fillBar {
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+.bulk-seach-order-modal {
+  .bulkSearch-main-container {
+    padding: 24px 16px;
+    .ant-input {
+      height: 120px;
+      background-color: #f5f5f5;
+    }
+    .footer-container {
+      padding-top: 12px;
+      .submit-btn {
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-size: 16px;
+        background-color: #c2e2d0;
+        border-color: transparent;
+        color: #3b644d;
+        .icon-container {
+          position: relative;
+          top: 3px;
+        }
+      }
+      .submit-btn:hover {
+        background-color: #91c1a6;
+        border-color: transparent;
+        color: #3b644d;
+      }
+    }
+    .info-box-container {
+      background-color: #f5f4fa;
+      margin-top: 12px;
+      padding: 11px 0px 7px 24px;
+      color: #505050;
+      font-size: 12px;
+      position: relative;
+      span {
+        color: #514de2;
+        font-weight: 600;
+      }
+      .icon-container {
+        position: absolute;
+        top: 12px;
+        left: 9px;
+      }
+    }
+  }
+}

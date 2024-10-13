@@ -1,0 +1,202 @@
+.AddFundsModal__main {
+  overflow: hidden;
+  border-radius: 4px !important;
+  // width: auto !important;
+
+  .ant-modal-close-x {
+    svg {
+      fill: #fff;
+    }
+  }
+
+  .fund-modal-header {
+    background-color: #6450d3;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(./header.svg);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-position: center;
+      background-size: cover;
+      right: 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+      position: relative;
+      z-index: 9999;
+      font-weight: 500;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .ant-modal-body {
+    padding: 12px 36px;
+  }
+  .ant-modal-content {
+    padding: 0px !important;
+    margin: 0px !important;
+
+    .AddFundsModal__amount {
+      margin-bottom: 16px;
+      .ant-input-affix-wrapper {
+        border-color: #dddddd !important;
+        border-radius: 4px !important;
+        background-color: #fcfcfc;
+        color: #212121 !important;
+      }
+    }
+
+    .ant-select-selector {
+      border-color: #dddddd !important;
+      border-radius: 4px !important;
+      background-color: #fcfcfc;
+      color: #212121 !important;
+    }
+    .ant-select {
+      margin-bottom: 24px;
+      svg {
+        transition: 0.3s all linear;
+        path {
+          fill: #848484 !important;
+        }
+      }
+    }
+
+    .ant-select-open {
+      svg {
+        transition: 0.3s all linear;
+        transform: rotate(-180deg);
+      }
+    }
+    .fund-field-wraper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .fund-field {
+        gap: 24px;
+        .title {
+          flex: 0.4;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-size: 16px;
+          color: #848484;
+        }
+        .amount {
+          flex: 0.6;
+          background: #eaeaea;
+          padding: 6px 18px;
+          border-radius: 4px;
+          min-height: 51.53px;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          .inr {
+            font-size: 20px;
+            font-weight: 600;
+            color: #212121;
+          }
+
+          .usd {
+            font-size: 20px;
+            font-weight: 600;
+            color: #848484;
+          }
+        }
+      }
+    }
+
+    .payment-method-heading {
+      background-color: #d0cde0;
+      border-radius: 4px 4px 0 0;
+      font-size: 20px;
+      color: #766f9a;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: -1px;
+      position: relative;
+      z-index: 999;
+      margin-top: 26px;
+    }
+
+    .payment-option {
+      padding: 6px 12px;
+      background-color: #fcfcfc;
+      border: 1px solid #dddddd;
+      cursor: pointer;
+
+      transition: 0.3s all linear !important;
+
+      &:hover {
+        background-color: #e1e1e1;
+      }
+
+      .left {
+        gap: 15px;
+        align-items: center;
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          margin-left: 0px;
+          line-height: 22px;
+          color: #848484;
+        }
+
+        div {
+          span {
+            font-size: 12px;
+            font-style: italic;
+            color: #848484;
+          }
+        }
+      }
+    }
+
+    .payment-selected {
+      border-color: #168f64;
+
+      .ant-radio-inner {
+        border-color: #168f64;
+        background: #168f64;
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    .ant-btn {
+      text-align: center;
+      background: #168f64;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 700;
+      height: 52px;
+      border-radius: 0;
+      border: none;
+    }
+  }
+}
