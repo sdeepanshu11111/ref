@@ -1,8 +1,13 @@
 import React from 'react';
-import { Table, Button, Card } from 'antd';
+import { Table, Button, Card,  Modal } from 'antd';
+import CreateProgramModal from './CreateProgramModal';
 import './index.scss';
 
 const Programs = () => {
+
+
+  const [visible, setVisible] = React.useState(false)
+
   const dataSource = [
     {
       key: '1',
@@ -66,9 +71,10 @@ const Programs = () => {
         pagination={false}
         className="programs-table"
       />
-      <Button type="primary" className="create-program-btn">
+      <Button onClick={()=>setVisible(true)} type="primary" className="create-program-btn">
         Create New Program
       </Button>
+      <CreateProgramModal isModalOpen={visible} handleCancel={()=>setVisible(false)} />
     </Card>
   );
 };
