@@ -48,6 +48,14 @@ const CreateProgramModal = ({ isModalOpen, handleCancel }) => {
           stackCoupons: false, // Toggle for stacking coupons
           location: "allCountries",
           refereeCurrency: "allCurrencies",
+          spentRangeMin: "", // Added for min spent range
+          spentRangeMax: "", // Added for max spent range
+          ordersRangeMin: "", // Added for min orders range
+          ordersRangeMax: "", // Added for max orders range
+          referredRevenueMin: "", // Added for min referred revenue range
+          referredRevenueMax: "", // Added for max referred revenue range
+          referredOrdersMin: "", // Added for min referred orders range
+          referredOrdersMax: "", // Added for max referred orders range
         }}
       >
         {/* Program Name */}
@@ -189,31 +197,51 @@ const CreateProgramModal = ({ isModalOpen, handleCancel }) => {
                   </Select>
                 </Form.Item>
 
-                <Form.Item label="Total Spent Range" name="spentRange">
+                {/* Min Max for Total Spent Range */}
+                <Form.Item label="Total Spent Range">
                   <Input.Group compact>
-                    <Input style={{ width: "50%" }} placeholder="Min" />
-                    <Input style={{ width: "50%" }} placeholder="Max" />
+                    <Form.Item name="spentRangeMin" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Min" />
+                    </Form.Item>
+                    <Form.Item name="spentRangeMax" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Max" />
+                    </Form.Item>
                   </Input.Group>
                 </Form.Item>
 
-                <Form.Item label="Number of Orders Range" name="ordersRange">
+                {/* Min Max for Number of Orders Range */}
+                <Form.Item label="Number of Orders Range">
                   <Input.Group compact>
-                    <Input style={{ width: "50%" }} placeholder="Min" />
-                    <Input style={{ width: "50%" }} placeholder="Max" />
+                    <Form.Item name="ordersRangeMin" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Min" />
+                    </Form.Item>
+                    <Form.Item name="ordersRangeMax" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Max" />
+                    </Form.Item>
                   </Input.Group>
                 </Form.Item>
 
-                <Form.Item label="Total Referred Revenue Range" name="referredRevenueRange">
+                {/* Min Max for Referred Revenue Range */}
+                <Form.Item label="Total Referred Revenue Range">
                   <Input.Group compact>
-                    <Input style={{ width: "50%" }} placeholder="Min" />
-                    <Input style={{ width: "50%" }} placeholder="Max" />
+                    <Form.Item name="referredRevenueMin" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Min" />
+                    </Form.Item>
+                    <Form.Item name="referredRevenueMax" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Max" />
+                    </Form.Item>
                   </Input.Group>
                 </Form.Item>
 
-                <Form.Item label="Total Referred Orders Range" name="referredOrdersRange">
+                {/* Min Max for Referred Orders Range */}
+                <Form.Item label="Total Referred Orders Range">
                   <Input.Group compact>
-                    <Input style={{ width: "50%" }} placeholder="Min" />
-                    <Input style={{ width: "50%" }} placeholder="Max" />
+                    <Form.Item name="referredOrdersMin" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Min" />
+                    </Form.Item>
+                    <Form.Item name="referredOrdersMax" noStyle>
+                      <Input style={{ width: "50%" }} placeholder="Max" />
+                    </Form.Item>
                   </Input.Group>
                 </Form.Item>
               </div>
