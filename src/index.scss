@@ -134,15 +134,15 @@ body {
 
   .ant-checkbox-checked {
     .ant-checkbox-inner {
-      background-color: #514de2;
-      border: 1px solid #514de2;
+      background-color: #212121;
+      border: 1px solid #212121;
     }
   }
 
   .ant-checkbox-indeterminate {
     .ant-checkbox-inner {
-      background-color: #514de2;
-      border: 1px solid #514de2;
+      background-color: #212121;
+      border: 1px solid #212121;
     }
     .ant-checkbox-inner::after {
       background-color: #fff;
@@ -157,7 +157,20 @@ body {
   }
 }
 
+.ant-radio-wrapper {
+  .ant-radio-inner {
 
+  }
+
+  .ant-radio-checked {
+    .ant-radio-inner {
+      background-color: #212121;
+      border: 1px solid #212121;
+    }
+  }
+
+
+}
 
 
 .payout-card {

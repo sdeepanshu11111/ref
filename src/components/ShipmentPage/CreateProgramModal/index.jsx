@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Checkbox, Radio, Switch, Select, Modal } from "antd";
+import "./index.scss";
 import { motion } from "framer-motion";
 
 const CreateProgramModal = ({ isModalOpen, handleCancel }) => {
@@ -249,8 +250,8 @@ const CreateProgramModal = ({ isModalOpen, handleCancel }) => {
           )}
         </div>
 
-        <Form.Item>
-          <Button type="primary" htmlType="submit">
+        <Form.Item className="submit-btn-program" >
+          <Button width="100%" type="primary" htmlType="submit">
             Submit
           </Button>
         </Form.Item>
