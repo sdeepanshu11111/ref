@@ -1,0 +1,135 @@
+.screenWapper-container {
+  background-color: #fff;
+  border-radius: 0px;
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 13px 12px 20px 12px;
+  background-image: url(./bg.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .stage-container {
+    min-width: 412px;
+    // background: linear-gradient(-180deg, #514DE2, #8e5bc2);
+    background: #514de2 !important;
+    z-index: 2;
+    border-radius: 8px;
+    position: relative;
+    .vf-icon-container {
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      line-height: 0;
+    }
+    .steps-container {
+      padding-top: 55px;
+      padding-left: 40px;
+      .step-container {
+        font-size: 18px;
+        .ant-steps-item-title {
+          font-size: 18px;
+          color: #cbc2f4;
+          font-weight: 700;
+          .complete-icon-container {
+            position: relative;
+            top: 6px;
+            left: 4px;
+            display: none;
+          }
+        }
+
+        .ant-steps-item-description {
+          font-size: 14px;
+          color: #cbc2f4;
+        }
+      }
+      .ant-steps-item-finish {
+        .complete-icon-container {
+          display: inline !important;
+        }
+      }
+      .ant-steps-item-active {
+        .ant-steps-item-title {
+          color: #fff;
+        }
+        .ant-steps-item-description {
+          color: #fff;
+        }
+        svg {
+          circle {
+            fill: #fff;
+          }
+          ellipse {
+            fill: #fff;
+          }
+          path {
+            fill: #6450d3;
+          }
+        }
+      }
+      .ant-steps.ant-steps-vertical > .ant-steps-item {
+        padding-bottom: 10px;
+      }
+      .ant-steps.ant-steps-vertical > .ant-steps-item .ant-steps-item-icon {
+        margin-inline-end: 24px;
+      }
+
+      .ant-steps.ant-steps-vertical
+        > .ant-steps-item
+        > .ant-steps-item-container
+        > .ant-steps-item-tail {
+        inset-inline-start: 21px;
+        width: 0px;
+        border: 1px solid white;
+        border-style: dashed;
+        height: 100%;
+        padding: 0px;
+      }
+    }
+  }
+  .main-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-5%);
+    flex-direction: column;
+  }
+  .wave-container {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    line-height: 0;
+  }
+  .save-logout {
+    color: #848484;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .screenWapper-container {
+    flex-direction: column;
+    align-items: center;
+    .stage-container {
+      display: none;
+    }
+
+    .top-heading {
+      margin-top: 44px;
+    }
+    .save-logout {
+      position: unset;
+    }
+  }
+}

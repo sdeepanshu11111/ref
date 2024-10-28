@@ -18,6 +18,7 @@ import { Skeleton } from "antd";
 // const Subscription = React.lazy(() => import("./Subscription"));
 import Subscription from "./Subscription";
 import SwitchStore from "./switchStore";
+import DesignComp from "./components/DesignComp"
 // import Login2 from "./newLogin";
 import Login2 from "./newLogin";
 import Plans from "./Plans";
@@ -111,6 +112,21 @@ function App() {
             path="/signup"
             element={
               <Login2
+                auth={auth}
+                location={location}
+                title="vFulfill | Signup"
+                hash={hash}
+                navigate={navigate}
+                activeTab="signup"
+              />
+            }
+          />
+
+
+<Route
+            path="/editor"
+            element={
+              <DesignComp
                 auth={auth}
                 location={location}
                 title="vFulfill | Signup"
